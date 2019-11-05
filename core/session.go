@@ -10,6 +10,7 @@ import (
 	"sync"
 	"time"
 
+	"net/url"
 	"github.com/google/go-github/github"
 	"golang.org/x/oauth2"
 )
@@ -69,7 +70,7 @@ func (s *Session) InitGitHubClients() {
 
 
 		client.UserAgent = fmt.Sprintf("%s v%s", Name, Version)
-		_, _, err := client.Users.Get(s.Context, "")
+		_, _, err = client.Users.Get(s.Context, "")
 
 		if err != nil {
 			if _, ok := err.(*github.ErrorResponse); ok {
