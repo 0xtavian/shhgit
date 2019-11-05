@@ -61,6 +61,12 @@ func (s *Session) InitGitHubClients() {
 		tc := oauth2.NewClient(s.Context, ts)
 
 		client := github.NewClient(tc)
+		enterpriseURL, err := url.Parse("https://enterprise.github.example.com/api/v3/")
+		if err != nil {
+			fmt.Println(err)
+		}
+		client.BaseURL = enterpriseURL
+
 
 		client.UserAgent = fmt.Sprintf("%s v%s", Name, Version)
 		_, _, err := client.Users.Get(s.Context, "")
