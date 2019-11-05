@@ -1,3 +1,7 @@
+EDIT THIS LINE WITH YOUR GHE URL https://github.com/0xtavian/shhgit/blob/master/core/session.go#L65
+
+
+
 # **shhgit**: find GitHub secrets in real time
 
 **Shhgit finds secrets and sensitive files across GitHub code and Gists committed in *near* real time by listening to the [GitHub Events API](https://developer.github.com/v3/activity/events/).**
