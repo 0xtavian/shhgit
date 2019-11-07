@@ -1,6 +1,6 @@
 EDIT THIS LINE WITH YOUR GHE URL https://github.com/0xtavian/shhgit/blob/master/core/session.go#L65
 
-TODO: Some GHE might require a username to clone repos. This has not been implemented yet
+EDIT THESE TWO LINES AND ADD GHE USERNAME AND TOKEN AS THE PASSWORD https://github.com/0xtavian/shhgit/blob/master/core/git.go#L21
 
 # **shhgit**: find GitHub secrets in real time
 
