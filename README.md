@@ -1,6 +1,7 @@
 This is what I changed:
 
 Add your GHE URL https://github.com/0xtavian/shhgit/blob/master/core/session.go#L65-L69
+
 Add your username and api key as the password  https://github.com/0xtavian/shhgit/blob/master/core/git.go#L22-L23
 build normally 
  
